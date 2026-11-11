@@ -43,7 +43,8 @@ header h3 + p {
     padding: 10px;
     border-radius: 5px;
     background-color: #C93E24;
-    max-width: 70%;
+    width: fit-content;
+    max-width: 70%; 
     margin: 0 auto;
 }
 
@@ -91,8 +92,8 @@ a:hover {
     }    
 
 
-/* Responsive Design for mobile devices (max-width: 360px) */
-@media (max-width: 390px) {
+/* Responsive Design for mobile devices (max-width: 760px) */
+@media (max-width: 560px) {
 
     * {
     font-size: 16px;
@@ -101,6 +102,10 @@ a:hover {
     #about-me {
         max-width: 90%;
     }
+}
+
+@media (min-width: 1260px) {
+    
 }
 
 
