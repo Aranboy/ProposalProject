@@ -1,0 +1,106 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global [This was supposed to be for the body but I saw it said global and misunderstood]*/
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.4em;
+    color: #36FFCB;
+    background-color: #1B2A41;
+    text-align: center;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5em;
+    padding: 0;
+}
+header h2 {
+    font-size: 2em;
+    padding: .1em;
+
+}
+header h3 {
+    font-size: 1.5em;
+    padding: .1em;
+    margin-bottom: .2em;
+}
+
+header h3 + p {
+    color: #fff;
+    font-size: 1em;
+    padding: .1em;
+}
+
+#about-me {
+    display: block;
+    border: 1px transparent;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #C93E24;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-box {
+    margin: 0.5em 0;
+    border: 1em transparent #d4d4d8;
+    padding: 0 .25em;
+    
+    border-radius: 5px;
+    background-color: #AB5850;  
+}
+
+nav ul a:link {
+    color: #1B2A41;
+    font-size: .8em;
+    background-color: transparent;
+    }
+
+nav ul a:hover {
+    color: #8CF514;
+    font-size: .8em;
+    background-color: transparent;
+    }
+
+a:hover {
+    color: #8CF514;
+    font-size: 1.1em;
+    background-color: transparent;
+    }    
+
+
+/* Responsive Design for mobile devices (max-width: 360px) */
+@media (max-width: 390px) {
+
+    * {
+    font-size: 16px;
+}
+
+    #about-me {
+        max-width: 90%;
+    }
+}
+
+
