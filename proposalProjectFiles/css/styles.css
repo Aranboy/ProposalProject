@@ -11,31 +11,52 @@
     font-size: 20px;
     line-height: 1.4em;
     color: #36FFCB;
-    background-color: #1B2A41;
+    background-color: #362610;
     text-align: center;
 }
 
 /* Headers */ 
 /* I made my headers scale with the font size, so I don't have to individually change them for different screen sizes */
+
+header h1, 
+header h2,
+main h3 {
+    color: #edd7f5;
+}
+
 header h1 { 
     font-size: 2.5em;
     padding: 0;
 }
 header h2 {
-    font-size: 2em;
-    padding: .1em;
+    font-size: 1.75em;
+    padding: .2em;
 
 }
 main h3 {
-    font-size: 1.5em;
-    padding: 0em;
-    margin-bottom: 1em;
+    font-size: 1.25em;
+    padding: 0;
+    margin-bottom: 0;
+    width: fit-content;
+    max-width: 70%; 
+    margin: 0 auto;
+    color: #413842;
+}
+
+#about-me-heading {
+    display: block;
+    border: 1px transparent;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: #c6de8e;
+    margin-bottom: .25em;
 }
 
 /* This targets the paragraph immediately after the h3 header */
 main h3 + p {
-    color: #fff;
+    color: #ffffff;
     font-size: 1em;
+    font-family: 'Inter', sans-serif;
 }
 
 /* I wanted to have a little box around the paragraph to make it stand out */
@@ -66,6 +87,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Inter', sans-serif;
 }
 
 /* I styled the navigation links to have a little box around them
@@ -77,6 +99,20 @@ I think it looks kinda ugly because of the color but it's growing on me */
     
     border-radius: 5px;
     background-color: #AB5850;  
+}
+
+.nav-description {
+    color: #2a3328;
+    font-size: .8em;
+    font-family: 'Inter', sans-serif;
+    display: block;
+    border: 1px transparent;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #98cc8d;
+    width: fit-content;
+    max-width: 70%; 
+    margin: 0 auto;
 }
 
 /*I wanted the color of the link to be the same as the background so it would look neat*/

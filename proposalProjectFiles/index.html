@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M.M's Portfolio</title> <!-- This will be the tab title -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- These are for the font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> <!-- These are for the font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://googleapis.com" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css"> <!-- This will be the CSS file -->
@@ -16,21 +16,37 @@
 <header>
         <div>
             <h1>M.M Murshid</h1> <!-- This is the header, in this case, my name -->
+            <img src="assets/youngMM.JPG" alt="A photo of M.M Murshid" width="200" height="200">
             <h2>Software Test Engineer 2</h2> <!-- This is the job title -->
         </div>    
 </header>
 <main>
     <section>
-        <h3>About Me</h3> <!-- This is the section title -->
-        <p id="about-me">Hi, I'm M.M Murshid, a Software Test Engineer 2 with a passion for ensuring high-quality software products.</p> <!-- This is the section content -->
+        <h3 id="about-me-heading">About Me</h3> <!-- This is the section title -->
+        <p id="about-me">Hi, I'm M.M Murshid, a Software Test Engineer 2 with a passion for ensuring high-quality software products. I have worked with a manifold's worth of technology. Including many leading tools such as SeleniumWebdriver, Java, Jira, git, Maven, Test NG, Cucumber, Jenkins, SQL, Page factory, and postman.</p> <!-- This is the section content -->
     </section>
 </main>
         <!-- Primary Navigation -->
     <nav aria-label="Primary Navigation"> <!-- This is the primary navigation for my 4 pages -->
-        <ul>
+        <ul>           
+            <br>
+            <p class="nav-description">
+                Here I have my resume. With my work experience from my current job.
+            
             <li class="nav-box"><a href="resume.html">Resume</a></li> <!-- This navigates to my resume -->
+            </p>
+            <br>
+            <p class="nav-description">
+                Here I have projects I worked on such as a website.
+            
             <li class="nav-box"><a href="projects.html">Projects</a></li> <!-- This navigates to my projects -->
+            </p>
+            <br>
+            <p class="nav-description">
+                Here I have my skills, including programming languages, tools, and frameworks I have experience with.
+            
             <li class="nav-box"><a href="skills.html">Skills</a></li> <!-- This navigates to my skills -->
+            </p>
             <!-- <li><a href="contact.html">Contact</a></li> --> <!-- This was going to navigate to my contact information, but the footer seems a better spot -->
         </ul>
     </nav>
@@ -38,7 +54,7 @@
     <footer>
         <p></p>
         <nav>
-            <a href="contact.html">M.M Murshid Contact information</a> <!-- This navigates to my contact information -->
+            <a href="contact.html">Get In Touch?</a> <!-- This navigates to my contact information -->
         </nav>
     </footer>
 </body>
