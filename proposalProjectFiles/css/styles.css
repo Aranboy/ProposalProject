@@ -15,8 +15,9 @@
     text-align: center;
 }
 
-/* Header */
-header h1 {
+/* Headers */ 
+/* I made my headers scale with the font size, so I don't have to individually change them for different screen sizes */
+header h1 { 
     font-size: 2.5em;
     padding: 0;
 }
@@ -31,11 +32,13 @@ main h3 {
     margin-bottom: 1em;
 }
 
+/* This targets the paragraph immediately after the h3 header */
 main h3 + p {
     color: #fff;
     font-size: 1em;
 }
 
+/* I wanted to have a little box around the paragraph to make it stand out */
 #about-me {
     display: block;
     border: 1px transparent;
@@ -48,6 +51,7 @@ main h3 + p {
 }
 
 /* Navigation */
+/* I styled the navigation list to be centered and stacked vertically and remove the bullet points */
 nav ul {
     list-style: none;
     padding: 0;
@@ -57,12 +61,15 @@ nav ul {
     align-items: center;
 }
 
+/* I styled the navigation links to have no underlines*/
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* I styled the navigation links to have a little box around them
+I think it looks kinda ugly because of the color but it's growing on me */
 .nav-box {
     margin: 0.5em 0;
     border: 1em transparent #d4d4d8;
@@ -72,18 +79,24 @@ nav ul li a {
     background-color: #AB5850;  
 }
 
+/*I wanted the color of the link to be the same as the background so it would look neat*/
 nav ul a:link {
     color: #1B2A41;
     font-size: .8em;
     background-color: transparent;
     }
 
+/* I wanted the color of the link to change when hovered over, I thought it would becoem smaller 
+but I couldn't get that to work */
 nav ul a:hover {
     color: #8CF514;
     font-size: .8em;
     background-color: transparent;
     }
 
+/* I wanted the color of the link to change when hovered over, 
+and this was specific to my footer contact info. It also increases the font size when hovered over, which is 
+why I thought the above would get smaller, but alas, I think this is cool */
 a:hover {
     color: #8CF514;
     font-size: 1.1em;
@@ -94,17 +107,19 @@ a:hover {
 /* Responsive Design for mobile devices (max-width: 760px) */
 @media (max-width: 560px) {
 
+    /*I tried a few px sizes but couldnt figure out which would be a good break point.
+    I know there are mobile sizes and tablet sizes but I wasn't sure how to divide them*/
     * {
     font-size: 16px;
 }
-
+    /*90% width looked better on mobile so I changed it to 90%*/
     #about-me {
         max-width: 90%;
     }
 }
 
 @media (min-width: 1260px) {
-    
+    /*I thought to make changes if the screen was huge but decided not to*/
 }
 
 
