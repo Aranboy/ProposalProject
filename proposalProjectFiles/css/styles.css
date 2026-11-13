@@ -75,12 +75,23 @@ main h3 + p {
 /* I styled the navigation list to be centered and stacked vertically and remove the bullet points */
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: .5em;
     margin: 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
+
+#primary-nav {
+    justify-content: center;
+    gap: 1em;
+    background-color: #c6de8e;
+}
+
+nav ul li {
+    background-color: #c6de8e;
+}
+
 
 /* I styled the navigation links to have no underlines*/
 nav ul li a {
@@ -139,6 +150,69 @@ a:hover {
     background-color: transparent;
     }    
 
+#resume-download {
+    text-align: center;
+    margin: 0;
+    display: block;
+    border: 1px transparent;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f3e5e7;
+    width: fit-content;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#resume-download a{
+    text-decoration: none;
+    color: #040600;
+    background-color: #f3e5e7;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto; /* Centers the table block horizontally on the page */
+    max-width: 50%;
+
+}    
+th {
+    text-align: center;
+}
+td {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    max-width: 50%;
+}
+
+.final-row {
+    text-align: center;
+    margin: 0 auto; /* Centers the table itself on the page */
+}
+
+#footer-nav a{
+    text-align: center;
+    text-decoration: none;
+}
+
+#footer-nav {
+    margin-top: 1em;
+}
+
+/*Return home sticky button*/
+.floating-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #716161;
+        color: white;
+        padding: 6px 6px;
+        text-decoration: none; /*remove underlines*/
+        border-radius: 5px;
+        font-weight: bold;
+        z-index: 1000; /* Keeps it on top of other content */
+        transition: background-color 0.2s; /*I found this with AI and thought it was cool, no functionality to it*/
+      }
 
 /* Responsive Design for mobile devices (max-width: 760px) */
 @media (max-width: 560px) {
