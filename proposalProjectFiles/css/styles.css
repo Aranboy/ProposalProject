@@ -190,6 +190,38 @@ td {
     margin: 0 auto; /* Centers the table itself on the page */
 }
 
+.contact-form {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-size: 1em;
+  color: #e4e8e5;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: #b5aa19;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #020713;
+}
+
 #footer-nav a{
     text-align: center;
     text-decoration: none;
