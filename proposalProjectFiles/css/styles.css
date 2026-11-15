@@ -136,7 +136,7 @@ nav ul a:link {
 /* I wanted the color of the link to change when hovered over, I thought it would becoem smaller 
 but I couldn't get that to work */
 nav ul a:hover {
-    color: #8CF514;
+    color: #a561f8;
     font-size: .8em;
     background-color: transparent;
     }
