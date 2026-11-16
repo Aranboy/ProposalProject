@@ -28,6 +28,7 @@ header h1 {
     font-size: 2.5em;
     padding: 0;
 }
+
 header h2 {
     font-size: 1.75em;
     padding: .2em;
@@ -50,6 +51,15 @@ main h3 {
     border-radius: 5px;
     background-color: #c6de8e;
     margin-bottom: .25em;
+}
+
+.summary {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    max-width: 70%; 
+    margin: 0 auto;
 }
 
 /* This targets the paragraph immediately after the h3 header */
@@ -150,6 +160,13 @@ a:hover {
     background-color: transparent;
     }    
 
+.responsive-video {
+    width: 100%;
+    max-width: 40%;
+    height: auto;
+    display: block;
+}
+
 #resume-download {
     text-align: center;
     margin: 0;
@@ -167,6 +184,43 @@ a:hover {
     text-decoration: none;
     color: #040600;
     background-color: #f3e5e7;
+}
+
+.job-location {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    width: fit-content;
+    max-width: 70%; 
+    color: #6e6e5a;
+    font-size: 1.3em;
+
+}
+
+.job-description {
+    text-align: justify;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    max-width: 70%; 
+    color: #989c60;
+    padding-bottom: .4em;
+}
+
+.resume-list {
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    max-width: 60%; 
+    padding-left: 3em; /* Indents the content to the right by 1em */
+    padding-bottom: .2em; /* Adds space below the content */
+}
+
+section ul li {
+    padding-bottom: .4em; /* Adds space below each list item */
+    text-align: left; /* Aligns the text to the left */
 }
 
 table {
@@ -190,6 +244,16 @@ td {
     margin: 0 auto; /* Centers the table itself on the page */
 }
 
+#contact-form-title {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    width: fit-content;
+    max-width: 70%; 
+    color:#dacd17
+}
+
 .contact-form {
   max-width: 400px;
   text-align: center;
@@ -208,6 +272,14 @@ label {
   margin-bottom: 8px;
 }
 
+input#full-name,
+input#email,
+input#telephoneNumber,
+textarea#message {
+    background-color: #a36b37;
+    border-color: #a7a7a7;
+}
+
 button[type="submit"] {
   width: 100%;
   padding: 10px 16px;
@@ -222,13 +294,21 @@ button[type="submit"]:hover {
   background-color: #020713;
 }
 
-#footer-nav a{
+article h2 {
     text-align: center;
-    text-decoration: none;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
-#footer-nav {
+.footer-nav a{
+    text-align: center;
+    text-decoration: none;
+    color: #bbff00;
+}
+
+.footer-nav {
     margin-top: 1em;
+    padding-bottom: 1em;
 }
 
 /*Return home sticky button*/
