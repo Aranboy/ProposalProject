@@ -31,27 +31,35 @@
         </div>    
 </header>
 <main>    
-    <article >
+    <article>
         <p class="summary">
         Here I have projects I worked on such as a website.
         </p>
 
-        <h2 class="projects-row">Project 1: Personal Website</h2>
-        <p class="projects-info">In this project, I created a responsive personal website using HTML and CSS.</p>
-        <figure class="projects-media">
-            <video src="assets/project1Explanation.mp4" class="responsive-video" controls loop muted poster="assets/rootStructure.png">
-                <p>Your browser doesn't support HTML video. Here is a <a href="assets/project1Explanation.mp4">link to the video file</a> instead.</p>
-            </video>
-        </figure>
+        <!-- Wrapped in a container for side-by-side layout -->
+        <div class="project-container">
+            <div class="project-text">
+                <h2 class="projects-row" id="project1-heading">Project 1: Personal Website</h2>
+                <p class="projects-info" id="project1-info">In this project, I created a responsive personal website using HTML and CSS.</p>
+            </div>
+            
+            <aside class="project-aside">
+                <figure class="projects-media">
+                    <video src="assets/project1Explanation.mp4" class="responsive-video" controls loop muted poster="assets/rootStructure.png">
+                        <p>Your browser doesn't support HTML video. Here is a <a href="assets/project1Explanation.mp4">link to the video file</a> instead.</p>
+                    </video>
+                </figure>
+            </aside>
+        </div>
 
         <br>
         <h2>Project 2: Selenium Test framework</h2>
-        <p>This is what I did in this project.</p>
+        <p>I developed a Selenium-based test framework for automating web application testing, ensuring cross-browser compatibility and robust test coverage.</p>
         <br>
         <h2>Project 3: Rest Api Automation framework</h2>
-        <p>This is what I did in this project.</p>
+        <p>I worked on an automated REST API integration test suite for the Document Management Service, a platform that handles uploading, searching, transferring, and managing the lifecycle of documents across the company's divisions. The suite is built in Java 17 with JUnit 5 and REST-assured and runs against real deployed environments (local, dev, stage, and feature branches) instead of mocks. It authenticates through Okta, runs tests in parallel, and cleans up all the data it creates. It's organized into clear layers (tests, reusable step classes, test-data enums, and a custom assertion library), and it runs automatically in GitHub Actions CI on every push to dev and feature branches. The work shows I can design maintainable test frameworks, build for concurrency and reliability, and work with enterprise tooling like Maven, OAuth, and CI/CD pipelines.</p>
         <br>
-        <p><a href="https://github.com/example">Github</a></p>
+        <p><a href="https://github.com/example">Github Link</a></p>
 
     </article>
 </main>

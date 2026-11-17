@@ -38,11 +38,11 @@ header h2 {
 
 main h2 {
     font-size: 1.5em;
-    padding-top: .2em;
     margin-bottom: .3em;
     width: fit-content;
     max-width: 70%; 
     margin: 0 auto;
+    margin-top: 0em;
     color: #80e46c;
 }
 
@@ -177,7 +177,34 @@ a:hover {
     max-width: 40%;
     height: auto;
     display: block;
-    margin: 0 auto;}
+    margin: 0 auto;
+    margin-top: 1em;    
+}
+
+/* Side-by-side layout for Project 1 */
+.project-container {
+    display: flex;
+    align-items: center;     /* Vertically centers text and video */
+    justify-content: center;
+    gap: 3rem;               /* Space between text and video */
+    max-width: 80%;          /* Controls how wide the block is on screen */
+    margin: 0 auto 2rem auto; /* Centers the whole block and adds bottom spacing */
+    text-align: left;        /* Aligns text nicely to the left of the video */
+}
+
+.project-text {
+    flex: 1;                 /* Text takes up half the space */
+}
+
+.project-aside {
+    flex: 1;                 /* Video takes up half the space */
+}
+
+/* Overrides your global responsive-video margin so it fits clean inside flex */
+.project-container .responsive-video {
+    max-width: 100%;
+    margin: 0;               
+}
 
 #resume-download {
     text-align: center;
@@ -219,6 +246,35 @@ a:hover {
     color: #989c60;
     padding-bottom: .4em;
 }
+
+article p {
+    text-align: justify;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    max-width: 70%; 
+    color: #d7d3dd;
+}
+
+article a {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 10%; 
+    color: #d7d3dd;
+    text-decoration: none;
+    color: #d1dd61;
+}
+
+#project1-heading {
+    margin: 0;
+
+}
+
+#project1-info {
+    margin: 0;
+    text-align: left;
+}
+
 
 .resume-list {
     text-align: left;
