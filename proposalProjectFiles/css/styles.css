@@ -174,11 +174,10 @@ a:hover {
     }    
 
 .responsive-video {
-    width: 100%;
     max-width: 40%;
     height: auto;
     display: block;
-}
+    margin: 0 auto;}
 
 #resume-download {
     text-align: center;
