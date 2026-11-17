@@ -6,7 +6,7 @@
 }
 
 /* Global [This was supposed to be for the body but I saw it said global and misunderstood]*/
-* {
+body {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     line-height: 1.4em;
@@ -22,26 +22,38 @@ header h1,
 header h2,
 main h3 {
     color: #edd7f5;
+    padding: 1em;
 }
 
 header h1 { 
     font-size: 2.5em;
-    padding: 0;
+    padding: .4em;
 }
 
 header h2 {
-    font-size: 1.75em;
-    padding: .2em;
+    font-size: 1.5em;
+    padding-bottom: 1em;
 
 }
-main h3 {
-    font-size: 1.25em;
-    padding: 0;
-    margin-bottom: 0;
+
+main h2 {
+    font-size: 1.5em;
+    padding-top: .2em;
+    margin-bottom: .3em;
     width: fit-content;
     max-width: 70%; 
     margin: 0 auto;
-    color: #413842;
+    color: #80e46c;
+}
+
+main h3 {
+    font-size: 1.25em;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: .7em;
+    width: fit-content;
+    max-width: 70%; 
+    color: #aa6db1;
 }
 
 #about-me-heading {
@@ -50,7 +62,8 @@ main h3 {
     padding: 0 5px;
     border-radius: 5px;
     background-color: #c6de8e;
-    margin-bottom: .25em;
+    color: #1B2A41;
+    margin-bottom: .7em;
 }
 
 .summary {
@@ -223,25 +236,61 @@ section ul li {
     text-align: left; /* Aligns the text to the left */
 }
 
+section h2 {
+    padding-bottom: 1em; /* Adds space below the subheading */
+}
+
+section p {
+    color: #d1c9e4;
+}
+
+section a{
+    color: #d1c9e4;
+    text-decoration: none;
+}
+
 table {
     text-align: center;
     margin: 0 auto; /* Centers the table block horizontally on the page */
     max-width: 50%;
 
 }    
-th {
+
+.skills-section {
     text-align: center;
-}
-td {
-    text-align: center;
-    padding-bottom: 1em;
-    padding-right: 1em;
-    max-width: 50%;
 }
 
-.final-row {
+.skills-table {
+    width: 100%;
+    max-width: 700px;          
+    margin: 0 auto;            /* centers the table block */
+    border-collapse: collapse;
+    font-family: sans-serif;
     text-align: center;
-    margin: 0 auto; /* Centers the table itself on the page */
+}
+
+.skills-table th,
+.skills-table td {
+    padding: 12px 15px;
+    border: 1px dotted #0e0000;
+    text-align: center;
+}
+
+/* Header row */
+.skills-table thead tr {
+    background-color: #2c3e50;
+    color: #eba2eb;
+}
+
+/* Alternating row colors using nth-of-type */
+.skills-table tbody tr:nth-of-type(odd) {
+    background-color: #07090a;
+    color: #e4f3f1;
+}
+
+.skills-table tbody tr:nth-of-type(even) {
+    background-color: #ebd5ab;
+    color: #000000;
 }
 
 #contact-form-title {
@@ -251,7 +300,8 @@ td {
     padding: 10px;
     width: fit-content;
     max-width: 70%; 
-    color:#dacd17
+    color:#dacd17;
+    font-size: 1.1em;
 }
 
 .contact-form {
@@ -269,7 +319,7 @@ label {
   font-size: 1em;
   color: #e4e8e5;
   margin: 0 auto;
-  margin-bottom: 8px;
+  margin-bottom: .2em;
 }
 
 input#full-name,
@@ -278,16 +328,18 @@ input#telephoneNumber,
 textarea#message {
     background-color: #a36b37;
     border-color: #a7a7a7;
+    padding: .3em;
 }
 
 button[type="submit"] {
-  width: 100%;
-  padding: 10px 16px;
+  width: 30%;
+  padding: .4em 0;
   background-color: #b5aa19;
   color: #ffffff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-size: .75em;
 }
 
 button[type="submit"]:hover {
