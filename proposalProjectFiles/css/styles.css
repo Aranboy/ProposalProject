@@ -76,16 +76,11 @@ main h3 {
   cursor: pointer;
 }
 
-/* On state: filled */
 #ccToggle[aria-pressed="true"] {
   background: #1a1a1a;
   color: #fff;
-}
-
-/* Keyboard focus ring */
-#ccToggle:focus-visible {
-  outline: 3px solid #2563eb;
-  outline-offset: 2px;
+  padding: 0.4rem 0.9rem;
+  /* margin-bottom: 1em; */
 }
 
 #captions {

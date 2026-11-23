@@ -16,6 +16,6 @@ ccButton.addEventListener('click', () => {
   captionsOn = !captionsOn;
   ccButton.setAttribute('aria-pressed', captionsOn);
   ccButton.textContent = captionsOn ? 'CC: On' : 'CC: Off';
-  captionDisplay.hidden = !captionsOn;
-  if (captionsOn) renderCaptions();   // show the current line right away
+  captionDisplay.classList.toggle('is-off', !captionsOn);
+  if (captionsOn) renderCaptions();
 });
