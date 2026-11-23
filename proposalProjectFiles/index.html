@@ -38,9 +38,11 @@
         <h3 id="about-me-heading">About Me</h3> <!-- This is the section title -->
         <audio controls>
         <source src="assets/aboutmeAudio.mp3" type="audio/mpeg">
-        <track src="assets/aboutMeAudioText.vtt" kind="captions" srclang="en" label="English" default>
+        <track id="audioTrack" src="assets/aboutMeAudioText.vtt" kind="captions" srclang="en" label="English" default>
         Your browser does not support the audio element.
         </audio>
+        <p id="captions" aria-live="polite"></p>        
+        <script src="js/script.js"></script>
 
         <p id="about-me">Hi, I'm M.M Murshid, a Software Test Engineer 2 with a passion for ensuring high-quality software products. I have worked with a manifold's worth of technology. Including many leading tools such as SeleniumWebdriver, Java, Jira, git, Maven, Test NG, Cucumber, Jenkins, SQL, Page factory, and postman.</p> <!-- This is the section content -->
     </section>
