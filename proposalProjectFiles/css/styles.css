@@ -84,7 +84,7 @@ main h3 {
 }
 
 #captions {
-  min-height: 3em;
+  min-height: 2em;
 }
 
 #captions.is-off {
