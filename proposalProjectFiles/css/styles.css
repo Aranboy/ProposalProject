@@ -58,8 +58,8 @@ main h3 {
     margin-bottom: .7em;
     width: fit-content;
     max-width: 70%; 
-    color: #aa6db1;
-    text-shadow: 2px 2px #5e4b4b;
+    color: #f39292;
+    text-shadow: 1px 1px #5e4b4b;
 
 }
 
@@ -129,6 +129,14 @@ main h3 + p {
     max-width: 70%; 
     margin: 0 auto;
     /* background: linear-gradient(135deg, #f0c3bb 30%, #764ba2 100%); */
+}
+
+#skills-info {
+    font-size: 1.1em;
+    display: block;
+    color: #eee6db;
+    max-width: 70%; 
+    margin: 0 auto;
 }
 
 /* Navigation */
@@ -254,8 +262,9 @@ a:hover {
 }
 
 #resume-download {
+    text-decoration: none;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     display: block;
     border: 1px transparent;
     padding: 10px;
@@ -274,6 +283,9 @@ a:hover {
     
 }
 
+#resume-download-container {
+    padding-top: 1em;
+}
 
 .job-location {
     text-align: center;
