@@ -23,11 +23,16 @@ header h2,
 main h3 {
     color: #edd7f5;
     padding: 1em;
+    text-shadow: 2px 2px gray;
+    opacity: 0.8;
 }
 
 header h1 { 
     font-size: 2.5em;
     padding: .4em;
+    text-shadow: 3px 3px rgb(12, 7, 7);
+    opacity: 1;
+
 }
 
 header h2 {
@@ -54,6 +59,8 @@ main h3 {
     width: fit-content;
     max-width: 70%; 
     color: #aa6db1;
+    text-shadow: 2px 2px #5e4b4b;
+
 }
 
 #about-me-heading {
@@ -61,9 +68,11 @@ main h3 {
     border: 1px transparent;
     padding: 0 5px;
     border-radius: 5px;
-    background-color: #c6de8e;
+    /* background-color: #c6de8e; */
     color: #1B2A41;
     margin-bottom: .7em;
+    background: linear-gradient(35deg, #f7b06f 20%, #f0c3bb 60%);
+
 }
 
 #ccToggle {
@@ -119,6 +128,7 @@ main h3 + p {
     width: fit-content;
     max-width: 70%; 
     margin: 0 auto;
+    /* background: linear-gradient(135deg, #f0c3bb 30%, #764ba2 100%); */
 }
 
 /* Navigation */
@@ -136,10 +146,15 @@ nav ul {
     justify-content: center;
     gap: 1em;
     background-color: #c6de8e;
+    box-shadow: 0 4px 6px rgba(194, 180, 180, 0.78); 
 }
 
 nav ul li {
     background-color: #c6de8e;
+    padding: .05em .5em;
+    box-shadow: 0 4px 6px rgba(113, 172, 113, 0.78); 
+    opacity: 0.9;
+
 }
 
 
@@ -200,6 +215,11 @@ a:hover {
     background-color: transparent;
     }    
 
+#resume-download:hover,
+#resume-download a:hover{
+    background: linear-gradient(135deg, #c2a983 0%, #566b5d 100%);
+}
+
 .responsive-video {
     max-width: 40%;
     height: auto;
@@ -240,6 +260,7 @@ a:hover {
     border: 1px transparent;
     padding: 10px;
     border-radius: 5px;
+    color: #040600;
     background-color: #f3e5e7;
     width: fit-content;
     max-width: 70%;
@@ -249,8 +270,10 @@ a:hover {
 #resume-download a{
     text-decoration: none;
     color: #040600;
-    background-color: #f3e5e7;
+    /* background-color: #f3e5e7; */
+    
 }
+
 
 .job-location {
     text-align: center;
@@ -261,6 +284,7 @@ a:hover {
     max-width: 70%; 
     color: #6e6e5a;
     font-size: 1.3em;
+    text-shadow: 2px 2px #180303;
 
 }
 
