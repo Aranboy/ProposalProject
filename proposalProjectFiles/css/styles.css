@@ -429,6 +429,25 @@ table {
   margin: 0 auto;
 }
 
+#contact-details {
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.3em;
+}
+
+#contact-details a{
+    color: rgb(231, 156, 156);
+    text-align: center;
+    text-decoration: none;
+}
+
+#contact-details a:hover{
+    color: rgb(231, 156, 156);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
 .form-group {
   margin-bottom: 16px;
 }

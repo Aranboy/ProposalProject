@@ -31,14 +31,13 @@
         </div>    
 </header>
 <main>
-    <h3>M.M Murshid</h3>
-    <section id="contact-details">
+    <div id="contact-details">
         <p>Email: mursm3@mail.broward.edu</p>
         <p>Phone: +123-456-7890</p> 
         <p><a href="https://www.linkedin.com/in/mm-murshid">Linkedin</a></p>
         <p><a href="https://github.com/Aranboy">Github</a></p>
         <br>
-    </section>
+    </div>
 </main>
 <form action="/submit" method="POST" class="contact-form">
     <h2 id="contact-form-title">Feel free to reach out to me using the form below
@@ -49,8 +48,7 @@
     <input 
       type="text" 
       id="full-name" 
-      required 
-    />
+      required>
   </div>
 
   <div class="form-group">
@@ -59,8 +57,7 @@
       type="email" 
       id="email" 
       name="email" 
-      required 
-    />
+      required>
   </div>
 
 <div class="form-group">
@@ -69,8 +66,7 @@
     type="tel" 
     id="telephoneNumber" 
     name="telephoneNumber" 
-    required 
-/>
+    required>
 </div>
 
   <div class="form-group">
@@ -79,8 +75,8 @@
       id="message" 
       name="message"
       minlength="1" 
-      required 
-    ></textarea>
+      required>
+    </textarea>
   </div>
 
   <button type="submit">Send message</button> 
